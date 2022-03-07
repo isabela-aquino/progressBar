@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <title>Document</title>
+    <link rel="stylesheet/less" type="text/css" href="styles.less" />
+</head>
+<body>
+
+    <ul id="#step-list">
+        <li class="active" data-step="1">Crie sua conta</li>
+        <li data-step="2">Endereço</li>
+        <li data-step="3">Pagamento</li>
+        <li data-step="4">Confirmação</li>
+    </ul>
+
+    <div class="container-account" id="container-account">
+        <div class="personal-container">
+            <input type="text" placeholder="First Name">
+            <input type="text" placeholder="Last Name">
+            <input type="email" placeholder="Email">
+            <input type="password" placeholder="Password" />
+            <input type="password" placeholder="Confirm Password" />
+        </div>
+
+        <div class="container-social-media">
+            <h4>Ou entre pela:</h4>
+            <div class="logo-social-media">
+              <i data-feather="facebook"></i> 
+              <i data-feather="mail"></i> 
+              <i data-feather="twitter"></i>
+            </div>
+            
+        </div>
+        
+    </div>
+
+    <div class="address-container" id = "address-container">
+        Endereço
+    </div>
+
+    <div class="payment-container" id="payment-container">
+        payment
+    </div>
+
+    <div class="confirmation-container" id="confirmation-container">
+        Confirmação
+    </div>
+
+    <div class="container">
+        <button id="previous">Previous</button>
+        <button id="next">Next</button>
+    </div>
+    <script>
+        feather.replace()
+      </script>
+    <script src="https://cdn.jsdelivr.net/npm/less@4" ></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
