@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://unpkg.com/feather-icons"></script>
-    <title>Document</title>
+    <title>Progress Bar</title>
     <link rel="stylesheet/less" type="text/css" href="styles.less" />
 </head>
 <body>
@@ -27,7 +27,7 @@
         </div>
 
         <div class="container-social-media">
-            <h4>Ou entre pela:</h4>
+            <h4>Sign in With:</h4>
             <div class="logo-social-media">
               <i data-feather="facebook"></i> 
               <i data-feather="mail"></i> 
@@ -39,11 +39,54 @@
     </div>
 
     <div class="address-container" id = "address-container">
-        Endereço
+        <input type="text" placeholder="CEP"/>
+        <input type="text" placeholder="Logadouro"/>
+        <input type="email" placeholder="N°"/>
+        <input type="password" placeholder="Bairro"/>        
+        <input type="password" placeholder="Cidade"/>
+        <input type="password" placeholder="Estado"/>        
     </div>
 
     <div class="payment-container" id="payment-container">
-        payment
+        <div class="option-payment">
+            <button class="credit-card active" id="credit-card">
+                <img src="https://pngimg.com/uploads/credit_card/credit_card_PNG100.png" alt="">
+                <p>Credit Card</p>
+            </button>
+            <button class="boleto-payment" id="boleto-payment" >
+                <img src="https://www.scsaudearacatuba.com.br/wp-content/uploads/2016/02/boleto-direto-logo.png" alt="">
+                <p>Boleto</p>
+            </button>
+            <button class="paypal-payment" id="paypal-payment">
+                <img src="https://www.paypalobjects.com/webstatic/icon/pp258.png" alt="">
+                <p>PayPal</p>
+            </button>
+        </div>
+
+        <div class="option-creditCard" id="option-creditCard">
+            <input type="text" placeholder="Card Number"/>  
+            <input type="text" placeholder="Card Holder Name"/>
+            <label>Expiration Date:</label> 
+            <input type="text" placeholder="Month" id="date-expiration-month" list="month"/>
+            <datalist id="month">
+                <option value="Janeiro"></option>
+                <option value="Fevereiro"></option>
+                <option value="Março"></option>
+            </datalist>
+            <input type="text" placeholder="Years" id="date-expiration-years" list="year"/>
+            <datalist id="year">
+                <option value="2022"></option>
+                <option value="2023"></option>
+                <option value="2024"></option>
+            </datalist>
+            
+            <input type="text" placeholder="CVV" id="cvv"/>        
+        </div>
+
+        <div class="option-boleto" id="option-boleto">
+            <input type="text" placeholder="CPF"/>  
+            <input type="text" placeholder="Name"/>
+        </div>
     </div>
 
     <div class="confirmation-container" id="confirmation-container">
